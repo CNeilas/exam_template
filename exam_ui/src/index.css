@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #6200ee;
+  --primaryDarker: #3700b3;
+  --neutralGray: #cfe0fb;
+  --white: #fff;
+  --black: #000;
+  --error: #ff0000;
+}
+
+body {
+  background-color: var(--neutralGray);
+  color: var(--black);
+  font-family: 'Lato', serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryDarker);
+}
+
+img {
+  width: 100%;
+}
