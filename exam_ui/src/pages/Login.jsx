@@ -63,7 +63,7 @@ export const Login = () => {
       {!isAuthenticated && (
         <>
           <form onSubmit={handleSubmit}>
-            <h2 className="grid__header">Login to your account</h2>
+            <h2 className="grid__header">Login</h2>
             <div className="input_wrap">
               <input
                 type="text"

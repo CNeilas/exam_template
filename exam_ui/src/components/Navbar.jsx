@@ -13,14 +13,12 @@ export const Navbar = () => {
   return (
     <div className="nav_wrap">
       <nav>
-        LOGO
         {isAuthenticated ? (
           <p>Welcome, {user?.data.preferred_username}!</p>
         ) : (
           <p>
-            Welcome, guest! Consider{' '}
             <button className="button" onClick={handleNavigate}>
-              Logging in
+              Log In
             </button>
           </p>
         )}
@@ -34,6 +32,9 @@ export const Navbar = () => {
             <a href="/login">
               <FaUser className="nav__icon" size={24} />
             </a>
+          </li>
+          <li>
+            <a className="nav__icon" href="/create">Add Listing</a>
           </li>
         </ul>
       </nav>

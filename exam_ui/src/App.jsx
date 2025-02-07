@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './auth/AuthContext';
 import { Layout } from './Layout';
-
+import { CreateListing } from './pages/CreateListing'
 import './App.css';
 import { Homepage } from './pages/Homepage';
 import { Login } from './pages/Login';
@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/unauthorized" element={<Unauthorized />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/create" element={<CreateListing />} />
           <Route
             path="/test"
             element={
